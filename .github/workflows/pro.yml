@@ -1,5 +1,8 @@
 name: produccion
 
+on:
+  workflow_dispatch:
+
 jobs:
   Deploy_int:
     # Define the Github Actions Runner
