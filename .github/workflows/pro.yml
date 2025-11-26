@@ -7,7 +7,7 @@ jobs:
   Deploy_int:
     # Define the Github Actions Runner
     runs-on: ubuntu:latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/prod'
     steps:
       # Checkout the repo on the Github Actions Runner
       - uses: actions/checkout@v4
