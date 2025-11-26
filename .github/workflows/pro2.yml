@@ -1,4 +1,4 @@
-name: produccion
+name: produccion2
 
 # Workflow will be triggered as soon as a file is changed in the nginx-sample directory
 on:
