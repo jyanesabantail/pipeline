@@ -1,10 +1,14 @@
 name: produccion
 
+# Workflow will be triggered as soon as a file is changed in the nginx-sample directory
+on:
+  workflow_dispatch:
+
 jobs:
   Deploy_int:
     # Define the Github Actions Runner
     runs-on: ubuntu:latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/prod'
     steps:
       # Checkout the repo on the Github Actions Runner
       - uses: actions/checkout@v4
