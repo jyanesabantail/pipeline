@@ -1,0 +1,15 @@
+name: produccion
+
+jobs:
+  Deploy_int:
+    # Define the Github Actions Runner
+    runs-on: ubuntu:latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      # Checkout the repo on the Github Actions Runner
+      - uses: actions/checkout@v4
+      
+      # Install "cf" CLI
+      - name: pro
+        run: |
+          echo "hola pro"
