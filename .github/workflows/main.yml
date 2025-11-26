@@ -1,5 +1,8 @@
 name: Deploy Grill The Code To Int
 
+on:
+  workflow_dispatch:
+
 jobs:
   Deploy_int:
     # Define the Github Actions Runner
